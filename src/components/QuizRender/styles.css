@@ -1,0 +1,44 @@
+
+.needSelectedAnswer {
+    position: absolute;
+    top: 100%;
+    transform: translateY(50px);
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    
+    animation-name: shake;
+    animation-duration: 1s;
+}
+
+@keyframes shake {
+    from {
+        font-size: 18px;
+    }
+    10%, 90% {
+        transform: translateX(-2px) translateY(50px);
+    }
+
+    20%, 80% {
+        transform: translateX(3px) translateY(50px);
+    }
+
+    40%, 60% {
+        transform: translateX(5px) translateY(50px);
+    }
+
+    50% {
+        transform: translateX(-5px) translateY(50px);
+        font-size: 25px;
+    }
+
+    30%, 70% {
+        transform: translateX(-5px) translateY(50px);
+    }
+
+    to {
+        font-size: 18px;
+    }
+}
